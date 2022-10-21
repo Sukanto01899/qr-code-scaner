@@ -73,6 +73,10 @@ const copyContent = async () => {
     const text = document.getElementById("describetion").innerHTML;
     try {
       await navigator.clipboard.writeText(text);
+      copyBtn.innerText = 'Coped!'
+      setTimeout(()=>{
+        copyBtn.innerText = 'Copy'
+      },1000)
     } catch (err) {
       console.error('Failed to copy: ', err);
     }
