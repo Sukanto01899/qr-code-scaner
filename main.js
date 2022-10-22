@@ -67,8 +67,6 @@ const showReport = (data)=>{
     }
 };
 
-
-
 const copyContent = async () => {
     const text = document.getElementById("describetion").innerHTML;
     try {

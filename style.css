@@ -45,9 +45,11 @@ body {
   border: 3px solid rgb(37, 151, 251);
   background-color: black;
   position: relative;
+  overflow: hidden;
 }
 .content .img img {
   width: 100%;
+  object-fit: cover;
 }
 .content .btn {
   display: flex;
